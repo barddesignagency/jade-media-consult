@@ -2,25 +2,88 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #212121;
+  --black: #212121;
+  --brand: #f15a2d;
+  --brand-hover: #d94e27;
+  --primary: #f15a2d;
+  --secondary: #212121;
+  --neutral-900: #212121;
+  --neutral-700: #3a3a3a;
+  --neutral-500: #6b6b6b;
+  --neutral-200: #f3f3f3;
+}
+
+.dark {
+  --background: #212121;
+  --foreground: #ffffff;
+  --black: #212121;
+  --text-primary: #ffffff;
+  --neutral-900: #ffffff;
+  --neutral-700: #d1d1d1;
+  --neutral-500: #a3a3a3;
+  --neutral-200: #2b2b2b;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 16px;
+  @variant sm {
+    padding-inline: 24px;
+  }
+  @variant md {
+    padding-inline: 24px;
+  }
+  @variant lg {
+    padding-inline: 24px;
+  }
+  @variant xl {
+    padding-inline: 20px;
+  }
+  @variant 2xl {
+    padding-inline: 40px;
+  }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-black: var(--black);
+
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-200: var(--neutral-200);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Base styles */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font: var(--font-geist-sans);
+}
+p {
+  @apply text-base sm:text-lg lg:text-xl;
+}
+h1 {
+  @apply text-[32px] lg:text-4xl xl:text-[56px] font-bold leading-[100%];
+}
+
+h2 {
+  @apply text-2xl md:text-4xl lg:text-[40px] xl:text-5xl  leading-[132%] lg:leading-[120%] font-bold;
+}
+
+h3 {
+  @apply text-xl md:text-2xl lg:text-3xl xl:text-[32px]  leading-[132%] lg:leading-[125%] font-bold;
+}
+
+h4 {
+  @apply text-xl md:text-2xl lg:text-2xl xl:text-2xl lg:leading-[132%] leading-[120%] font-bold;
 }
