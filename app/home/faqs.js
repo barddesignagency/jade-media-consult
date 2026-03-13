@@ -27,7 +27,7 @@ const faqs = [
 
 function FAQSection() {
   return (
-    <section className=" lg:py-20 xl:py-24">
+    <section className=" py-20 xl:py-24">
       <div className="container grid lg:grid-cols-[minmax(300px,420px)_1fr] gap-24">
         {/* Left */}
         <div className="space-y-6">

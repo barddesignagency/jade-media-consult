@@ -4,7 +4,7 @@ import SectionDots from "@/components/ui/sectionDots";
 function ProvenResults() {
   return (
     <section
-      className="lg:py-20 xl:py-24 w-full"
+      className="py-20 xl:py-24 w-full"
       aria-labelledby="results-heading"
     >
       <div className="container bg-background text-foreground">

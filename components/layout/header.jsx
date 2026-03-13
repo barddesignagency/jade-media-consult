@@ -7,9 +7,9 @@ import Button from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="w-full bg-background text-foreground  xl:h-32">
+    <header className="w-full bg-background text-foreground  xl:h-32 h-18 md:h-24">
       <div className=" mx-auto  flex items-center justify-between container h-full w-full ">
-        <div className="font-bold text-xl relative h-11 w-28">
+        <div className="font-bold text-xl relative md:h-11 md:w-28 m h-6 w-16 ">
           {/* Light mode logo */}
           <Image
             src={logo}
@@ -33,9 +33,11 @@ export default function Header() {
           <Link href="/works">Our work</Link>
         </nav>
 
-        <Button variant="primary" size="md" icon>
-          Contact us
-        </Button>
+        <div className="hidden md:flex">
+          <Button variant="primary" size="md" icon>
+            Contact us
+          </Button>
+        </div>
       </div>
     </header>
   );

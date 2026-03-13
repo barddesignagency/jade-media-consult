@@ -24,7 +24,7 @@ const ServiceCard = ({ title, info, href }) => {
 function Services() {
   return (
     <section
-      className="bg-brand text-black lg:pb-20 xl:pb-24 lg:pt-16"
+      className="bg-brand text-black pb-20 xl:pb-24 pt-16 "
       aria-labelledby="services-heading"
     >
       <div className="container  ">
