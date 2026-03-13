@@ -14,7 +14,7 @@ function Footer() {
     <footer className="bg-[url('/images/bg-pattern-footer.jpg')] bg-cover bg-top w-full text-white pt-24 font-sans">
       <div className="container">
         {/* Top Footer */}
-        <div className="flex flex-col lg:flex-row justify-start gap-18">
+        <div className="flex flex-col lg:flex-row justify-start gap-8 lg:gap-18">
           {/* Brand */}
           <div className="grow space-y-4">
             <div className="relative h-11 w-28">
@@ -36,7 +36,7 @@ function Footer() {
           <div className="shrink-0">
             <h4 className="mb-4 text-white">Quick links</h4>
 
-            <ul className="lg:space-y-4 text-white lg:text-xl">
+            <ul className="lg:space-y-4 text-white lg:text-xl space-y-2">
               <li>
                 <Link href="/about">About us</Link>
               </li>

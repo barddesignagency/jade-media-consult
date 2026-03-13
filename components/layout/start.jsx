@@ -8,13 +8,13 @@ function Start() {
       className="py-24 bg-brand "
       aria-label="Begin Consultations With JMC"
     >
-      <div className="container flex flex-col lg:items-center items-start gap-4 lg:gap-6">
+      <div className="container flex flex-col md:items-center items-start gap-6 lg:gap-6">
         <SectionDots active={0} variant="dark" />
-        <h1 className="lg:text-center text-left text-black">
+        <h1 className="md:text-center text-left text-black">
           Ready to move from <br />
           visibility to authority?
         </h1>
-        <p className="lg:text-xl text-left lg:text-center text-black">
+        <p className="md:text-xl text-left md:text-center text-black">
           Stop showing up randomly. Start leading your industry.
         </p>
         <Button variant="tertiary" size="sm" thickness="semibold">

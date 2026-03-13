@@ -24,7 +24,7 @@ function Blueprint() {
               brand to lead in every space. We take the pressure of growth off
               your shoulders by aligning your message across every touchpoint.
             </p>
-            <Button variant="tertiary" size="md" href="/Ssrvices">
+            <Button variant="tertiary" size="md" href="/services">
               View all our services
             </Button>
           </div>
