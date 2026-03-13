@@ -73,7 +73,7 @@ p {
   @apply text-base sm:text-lg lg:text-xl;
 }
 h1 {
-  @apply text-[32px] lg:text-4xl xl:text-[56px] font-bold leading-[100%];
+  @apply text-[32px] sm:text-[48px]  lg:text-[56px] font-bold leading-[100%];
 }
 
 h2 {

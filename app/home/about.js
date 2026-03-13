@@ -7,10 +7,10 @@ import ladies from "@/public/images/ladies.jpg";
 function About() {
   return (
     <section
-      className="bg-brand text-black lg:py-20 xl:py-24"
+      className="bg-brand text-black py-20 xl:py-24"
       aria-labelledby="about-heading"
     >
-      <div className="container grid lg:grid-cols-2 ">
+      <div className="container grid md:grid-cols-2 gap-6">
         <div>
           <div className="font-xs md:font-sm lg:font-base flex gap-1 sm:gap-1.5 lg:gap-2 items-center">
             <SectionDots active={2} variant="dark" />
@@ -34,7 +34,7 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="relative h-full w-full lg:min-h-80 rounded-2xl overflow-hidden">
+        <div className="relative h-full w-full md:min-h-80 rounded-2xl overflow-hidden">
           <Image
             src={ladies}
             alt="Two Ladies Looking at a laptop"

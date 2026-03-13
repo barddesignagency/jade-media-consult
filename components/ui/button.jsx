@@ -42,7 +42,7 @@ const buttonVariants = cva(
 
 const iconSizes = {
   sm: "w-7 h-7",
-  md: "w-8 h-8",
+  md: "lg:w-8 lg:h-8 sm:h-6 sm:w-6 h-5 w-5",
 };
 
 const iconColors = {
