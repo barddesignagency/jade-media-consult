@@ -4,18 +4,27 @@ import { motion } from "framer-motion";
 import SectionDots from "@/components/ui/sectionDots";
 import Button from "@/components/ui/button";
 import { slideRight, staggerContainer } from "@/lib/animations";
+import Image from "next/image";
+import social from "@/public/images/services/social-media.jpg";
+import content from "@/public/images/services/content-creation.jpg";
+import digital from "@/public/images/services/digital-marketing.jpg";
 
-const ServiceCard = ({ title, info, href, delay }) => {
+const ServiceCard = ({ title, info, href, delay, image }) => {
   return (
     <div
       data-aos="fade-left"
       data-aos-easing="linear"
       data-aos-delay={delay}
-      className="rounded-2xl bg-background text-foreground flex flex-col h-60 sm:h-64 md:h-72 lg:h-80 justify-between w-full lg:p-8 sm:p-6 p-4 hover:-translate-y-2 transition-all duration-300"
+      className="rounded-2xl bg-background text-foreground flex flex-col h-112 sm:h-120 md:h-128 lg:h-140 w-full justify-between p-4 hover:-translate-y-2 transition-all duration-300"
     >
-      <div className="lg:space-y-3 space-y-2">
-        <h4 className="whitespace-pre-line">{title}</h4>
-        <p className="lg:leading-[140%] lg:whitespace-pre-line">{info}</p>
+      <div className="space-y-4">
+        <div className="w-full relative xl:h-72 shrink-0 rounded-2xl overflow-hidden bg-red-400">
+          <Image src={image} alt={title} fill className="object-cover" />
+        </div>
+        <div className="lg:space-y-3 space-y-2">
+          <h4 className="whitespace-pre-line">{title}</h4>
+          <p className="lg:leading-[140%] lg:whitespace-pre-line">{info}</p>
+        </div>
       </div>
 
       <Button
@@ -68,12 +77,14 @@ function Services() {
             info="Turning pages into professional public images and credibility signals."
             href="/services/social-media-marketing"
             delay={100}
+            image={social}
           />
           <ServiceCard
             title={`Full Marketing &\n SEO`}
             info={`Engineering brand authority and "moving the needle" with data-driven systems.`}
             href="/services/marketing"
             delay={300}
+            image={digital}
           />
           <div className="col-span-1 md:col-span-2 lg:col-span-1 items-center">
             <ServiceCard
@@ -81,6 +92,7 @@ function Services() {
               info={`The "heartbeat" of your brand.\n High-fidelity visuals and story-driven execution.`}
               href="/services/content-creation"
               delay={500}
+              image={content}
             />
           </div>
         </motion.div>
