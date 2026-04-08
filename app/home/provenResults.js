@@ -29,7 +29,7 @@ function ProvenResults() {
             <span>The JMC Results</span>
           </header>
 
-          <div className="grid lg:grid-cols-2 gap-12 mt-6 items-start ">
+          <div className="lg:grid flex   flex-col-reverse lg:grid-cols-2 gap-12 mt-6 items-start ">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ function ProvenResults() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="relative h-full w-full md:min-h-96 rounded-2xl overflow-hidden"
+              className="relative h-full w-full min-h-96 rounded-2xl overflow-hidden "
             >
               <Image
                 src={office}
@@ -62,13 +62,14 @@ function ProvenResults() {
                 className="object-cover"
               />
             </motion.div>
-
+          </div>
+          <div>
             <motion.ul
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
-              className="grid lg:grid-cols-3 w-full lg:col-span-2 gap-6"
+              className="grid md:grid-cols-3 w-full mt-12 gap-6"
             >
               <StatCounter
                 value={98}

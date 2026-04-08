@@ -44,11 +44,21 @@ function Hero() {
           variants={fadeUp}
           className="flex sm:flex-row flex-col sm:space-x-6 lg:space-x-8 items-center justify-center space-y-3 sm:space-y-0"
         >
-          <Button variant="primary" size="md" href="/">
+          <Button
+            variant="primary"
+            size="md"
+            href="/"
+            className="w-full sm:w-max"
+          >
             Book a Consultation
           </Button>
 
-          <Button variant="secondary" size="md" href="/services">
+          <Button
+            variant="secondary"
+            size="md"
+            href="/services"
+            className="w-full sm:w-max"
+          >
             View Our Services
           </Button>
         </motion.div>

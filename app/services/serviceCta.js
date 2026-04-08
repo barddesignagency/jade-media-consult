@@ -3,7 +3,10 @@ import Image from "next/image";
 
 export default function ServiceCTA() {
   return (
-    <div className="relative xl:h-152 col-span-2 rounded-2xl overflow-hidden bg-brand text-white p-8 flex flex-col justify-between">
+    <div
+      data-aos="fade-left"
+      className="relative min-h-80 xl:h-152 col-span-1 lg:col-span-2 rounded-2xl overflow-hidden bg-brand text-white p-8 flex flex-col justify-between"
+    >
       {/* decorative image */}
       <div className="absolute top-0 right-0 opacity-20">
         <Image

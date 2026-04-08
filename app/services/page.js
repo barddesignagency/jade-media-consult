@@ -3,7 +3,7 @@ import Services from "./services";
 
 function ServicesPage() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Services />
     </main>
   );

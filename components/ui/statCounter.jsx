@@ -13,7 +13,7 @@ export default function StatCounter({ value, label, icon: Icon }) {
   return (
     <li
       ref={ref}
-      className="space-y-2 bg-white lg:px-6 lg:py-7 px-3 py-3 lg:rounded-2xl"
+      className="space-y-2 bg-white lg:px-6 lg:py-7 px-3 py-3 rounded-2xl lg:rounded-3xl"
     >
       {Icon && <Icon size={44} className=" text-brand" />}
       <span className="text-4xl font-bold">+{count}%</span>

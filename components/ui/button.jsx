@@ -8,8 +8,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-brand text-black hover:bg-black hover:text-white",
-        secondary: "bg-white text-black hover:bg-black hover:text-white",
+        primary: "bg-brand text-black hover:bg-brand/70",
+        secondary: "bg-white text-black hover:bg-white/70 ",
         tertiary: "bg-black text-white hover:bg-white hover:text-black",
         outline: "border border-foreground hover:opacity-70",
         ghost: "hover:bg-gray-100",
@@ -46,8 +46,8 @@ const iconSizes = {
 };
 
 const iconColors = {
-  primary: "text-brand group-hover:text-black",
-  secondary: "text-white group-hover:text-black",
+  primary: "text-brand ",
+  secondary: "text-white ",
   tertiary: "text-black group-hover:text-white",
   outline: "text-background ",
   ghost: "text-foreground",

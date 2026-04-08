@@ -45,7 +45,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative h-full w-full md:min-h-80 rounded-2xl overflow-hidden"
+          className="relative h-full w-full min-h-80 rounded-2xl overflow-hidden"
         >
           <Image
             src={ladies}

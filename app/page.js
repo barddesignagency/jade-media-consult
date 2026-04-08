@@ -8,7 +8,7 @@ import FAQSection from "@/app/home/faqs";
 export default function Home() {
   return (
     <>
-      <main className="font-sans">
+      <main className="font-sans overflow-x-hidden">
         <Hero />
         <ProvenResults />
         <About />

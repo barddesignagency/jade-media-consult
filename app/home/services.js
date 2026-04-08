@@ -15,10 +15,10 @@ const ServiceCard = ({ title, info, href, delay, image }) => {
       data-aos="fade-left"
       data-aos-easing="linear"
       data-aos-delay={delay}
-      className="rounded-2xl bg-background text-foreground flex flex-col h-112 sm:h-120 md:h-128 lg:h-140 w-full justify-between p-4 hover:-translate-y-2 transition-all duration-300"
+      className="rounded-2xl bg-background text-foreground flex flex-col min-h-112 sm:h-120 md:h-128 lg:h-140 w-full justify-between p-4 hover:-translate-y-2 transition-all duration-300"
     >
       <div className="space-y-4">
-        <div className="w-full relative xl:h-72 shrink-0 rounded-2xl overflow-hidden bg-red-400">
+        <div className="w-full relative h-60 lg:h-64 xl:h-72 shrink-0 rounded-2xl overflow-hidden bg-red-400">
           <Image src={image} alt={title} fill className="object-cover" />
         </div>
         <div className="lg:space-y-3 space-y-2">
@@ -32,7 +32,7 @@ const ServiceCard = ({ title, info, href, delay, image }) => {
         variant="outline"
         href={href}
         thickness="regular"
-        className="w-max"
+        className="w-max mt-4"
       >
         Learn More
       </Button>
@@ -42,7 +42,7 @@ const ServiceCard = ({ title, info, href, delay, image }) => {
 function Services() {
   return (
     <section
-      className="bg-brand text-black pb-20 xl:pb-24 pt-16 "
+      className="bg-brand text-black pb-20 xl:pb-24 lg:pt-16"
       aria-labelledby="services-heading"
     >
       <div className="container  ">
