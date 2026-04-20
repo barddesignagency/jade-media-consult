@@ -26,7 +26,8 @@ function AboutHero() {
             alt="JMC's CEO, COO and other parts of the team"
             fill
             priority
-            loading="eager"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 640px, 996px"
+            placeholder="blur"
             className="object-cover"
           />
         </div>
