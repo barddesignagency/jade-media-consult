@@ -4,7 +4,7 @@ import SectionDots from "@/components/ui/sectionDots";
 function Philosphy() {
   return (
     <section
-      className="lg:py-20 xl:py-24 w-full"
+      className="py-20 xl:py-24 w-full"
       aria-labelledby="philosophy-heading"
     >
       <div className="container bg-background text-foreground">
@@ -12,7 +12,7 @@ function Philosphy() {
           <SectionDots active={1} variant="normal" />
           <span>The JMC Philosophy</span>
         </div>
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row flex-col justify-between gap-6">
           <div className="lg:max-w-147">
             <h3 className="py-4" id="philosophy-heading">
               Great brands don&apos;t grow by chance, <br />
@@ -26,7 +26,7 @@ function Philosphy() {
               authority.
             </p>
           </div>
-          <div className="lg:space-y-6 xl:space-y-8 lg:max-w-120 ">
+          <div className="space-y-6 xl:space-y-8 lg:max-w-120 ">
             <div>
               <h4>Strategy begins with structure.</h4>
               <p>

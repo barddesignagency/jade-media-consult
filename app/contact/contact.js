@@ -5,7 +5,7 @@ import ContactForm from "./contact-form";
 function Contact() {
   return (
     <section className="py-20 bg-brand" aria-labelledby="our-Contact-heading">
-      <div className="container grid lg:grid-cols-[460px_1fr] xl:grid-cols-[480px_1fr] lg:gap-10">
+      <div className="container grid lg:grid-cols-[460px_1fr] xl:grid-cols-[480px_1fr] gap-8 lg:gap-10">
         {/* LEFT INTRO */}
         <div className="space-y-4">
           <div className="space-y-4">

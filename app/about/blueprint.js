@@ -5,7 +5,7 @@ import Button from "@/components/ui/button";
 function Blueprint() {
   return (
     <section
-      className="lg:py-20 xl:py-24 w-full bg-brand"
+      className="py-20 xl:py-24 w-full bg-brand"
       aria-labelledby="philosophy-heading"
     >
       <div className="container  text-black">
@@ -13,7 +13,7 @@ function Blueprint() {
           <SectionDots active={2} variant="dark" />
           <span>The JMC Blueprint</span>
         </div>
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row flex-col justify-between gap-6">
           <div className="lg:max-w-147 space-y-4">
             <h3 className="" id="philosophy-heading">
               Full-Spectrum digital & <br />
@@ -28,8 +28,8 @@ function Blueprint() {
               View all our services
             </Button>
           </div>
-          <div className="lg:space-y-6 xl:space-y-8 lg:max-w-120 ">
-            <h3>Our core offerings</h3>
+          <div className="space-y-6 xl:space-y-8 lg:max-w-120 ">
+            <h3 className="lg:mt-0 mt-6">Our core offerings</h3>
             <div>
               <h4>Digital Authority:</h4>
               <p>

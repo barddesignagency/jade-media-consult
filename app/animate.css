@@ -1,12 +1,23 @@
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
+  from {
+    translate: 0;
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    translate: -100%;
   }
 }
 
 .animate-marquee {
-  animation: marquee 15s linear infinite;
+  animation: marquee 5s linear infinite;
+}
+.carousel {
+  display: flex;
+  overflow-x: auto;
+}
+.grouped {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: marquee 12s infinite linear;
 }

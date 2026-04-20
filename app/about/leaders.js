@@ -4,10 +4,7 @@ import LeaderCard from "@/components/ui/leaderCard";
 
 function Leaders() {
   return (
-    <section
-      className="lg:py-20 xl:py-24 w-full"
-      aria-labelledby="leader-heading"
-    >
+    <section className="py-20 xl:py-24 w-full" aria-labelledby="leader-heading">
       <div className="container bg-background text-foreground">
         <div className="font-xs md:font-sm lg:font-base flex gap-1 sm:gap-1.5 lg:gap-2 items-center">
           <SectionDots active={4} variant="normal" />
@@ -25,7 +22,7 @@ function Leaders() {
             </p>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 gap-8 mt-12">
+        <div className="grid md:grid-cols-2 gap-8 mt-12">
           <LeaderCard
             variant="featured"
             name="Ibukunoluwa K. Ademola"

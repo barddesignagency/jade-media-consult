@@ -44,7 +44,7 @@ function ContentBlock({ type, heading, body, items }) {
   );
 }
 
-function ServiceTemplate({ title, content }) {
+function ServiceTemplate({ title, content, image }) {
   const column1 = content.filter((block) => block.column === 1);
   const column2 = content.filter((block) => block.column === 2);
 

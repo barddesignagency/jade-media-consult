@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
 import SectionDots from "@/components/ui/sectionDots";
 import Button from "@/components/ui/button";
+import { usePathname } from "next/navigation";
 
 function Start() {
+  const pathname = usePathname();
   return (
     <section
-      className="py-24 bg-brand "
+      className={`py-24 bg-brand  ${pathname == "/contact" ? "hidden" : ""}`}
       aria-label="Begin Consultations With JMC"
     >
       <div className="container flex flex-col md:items-center items-start gap-6 lg:gap-6">
@@ -17,7 +20,12 @@ function Start() {
         <p className="md:text-xl text-left md:text-center text-black">
           Stop showing up randomly. Start leading your industry.
         </p>
-        <Button variant="tertiary" size="sm" thickness="semibold">
+        <Button
+          variant="tertiary"
+          size="sm"
+          thickness="semibold"
+          href="/contact"
+        >
           Start your growth journey
         </Button>
       </div>

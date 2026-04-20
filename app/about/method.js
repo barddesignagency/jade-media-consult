@@ -7,7 +7,7 @@ import team from "@/public/images/team-meeting.jpg";
 function Method() {
   return (
     <section
-      className="bg-brand text-black lg:py-20 xl:py-24"
+      className="bg-brand text-black pb-20 lg:pb-0 lg:py-20 xl:py-24"
       aria-labelledby="method-heading"
     >
       <div className="container  ">
@@ -17,8 +17,16 @@ function Method() {
         </div>
 
         <div className="grid lg:grid-cols-2">
+          <div className="relative h-64 sm:h-72 md:h-96 w-full lg:hidden block rounded-2xl overflow-hidden mb-6">
+            <Image
+              src={team}
+              alt="A team meeting at a board meeting"
+              fill
+              className="object-cover"
+            />
+          </div>
           <div className="">
-            <div className="lg:space-y-6 xl:space-y-8 lg:max-w-120 ">
+            <div className="space-y-6 xl:space-y-8 lg:max-w-120 ">
               <h3>Our core offerings</h3>
               <div>
                 <h4>Phase 1: Brand Positioning.</h4>
