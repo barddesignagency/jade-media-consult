@@ -4,10 +4,10 @@ import cargo from "@/public/logos/cargoafrik.png";
 export default function LogoMarquee() {
   const brands = [
     "/logos/cargoafrik.png",
-    "/logos/luxenurse.png",
+    "/logos/luxenurse-clinic.png",
     "/logos/ofadaboy.svg",
     "/logos/aduke2.png",
-    "/logos/luxenurse.png",
+    "/logos/luxenurse-clinic.png",
     "/logos/ofadaboy.svg",
   ];
 
